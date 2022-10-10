@@ -13,7 +13,7 @@ function timeRegulator(row, i) {
     var rowTime = rowValues[i].getAttribute('data-militaryTime')
     if(rowTime<currentTime){
         row.classList.add("past")
-    } else if (rowTime===currentTime){
+    } else if (rowTime==currentTime){
         row.classList.add("present")
     } else { 
         row.classList.add("future")
